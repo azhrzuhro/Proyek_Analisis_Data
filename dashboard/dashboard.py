@@ -7,7 +7,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 # Load Data
-bike_day = pd.read_csv("new_bike_day.csv") 
+bike_day = pd.read_csv("dashboard/new_bike_day.csv") 
 datetime_columns = ["dteday"]
 bike_day.sort_values(by="dteday", inplace=True)
 bike_day.reset_index(inplace=True)
